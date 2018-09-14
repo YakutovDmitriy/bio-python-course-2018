@@ -4,7 +4,7 @@
 
 * `def unique(e):`
 
-  This function should return sorted list of distinct elements of e.
+  This function should return sorted list of distinct elements of `e`.
 
   For example:
     ```
