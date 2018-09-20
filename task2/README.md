@@ -1,6 +1,6 @@
 # Task 2
 
-## Implement the following functions in file `task1/task1.py`:
+## Implement the following functions in file `task2/task2.py`:
 
 Do not forget to follow the rules from `pep8` and test your implementations with tests below.
 
