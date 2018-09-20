@@ -13,7 +13,7 @@ Do not forget to follow the rules from `pep8` and test your implementations with
     ```
     listToString([]) = "[]"
     listToString([1, 2, 3]) = "[1, 2, 3]"
-    listToString(['some string']) = "['some string']"
+    listToString([-5]) = "[-5]"
     ```
 
 
@@ -49,7 +49,7 @@ Do not forget to follow the rules from `pep8` and test your implementations with
 
 * `def competition(e, k):`
 
-  You have a list of non-negative integers `e`. `e[i]` is score of `i`-th participant if competition. Number in `e` are in descending order. 
+  You have a list of non-negative integers `e`. `e[i]` is score of `i`-th participant in competition. Numbers in list `e` are in descending order. 
 
   An excerpt from competition rules: "Contestant who earns a score equal to or greater than the `k`-th place (in `0`-enumeration) finisher's score will advance to the next round, as long as the contestant earns a positive score..."
 
@@ -67,7 +67,7 @@ Do not forget to follow the rules from `pep8` and test your implementations with
 
   `a`  and `b` are lists of positive integers. Consider a pair of integers `(i, j)` to be good if `i * j` is divisible by `i + j`. Return sorted list of integers `s` such that:
 
-  * There exist two numbers `i`, `j` from list `a`;
+  * There exist two numbers `i`, `j`;
   * `i` is in list `a`;
   * `j` is in list `b`;
   * Pair `(i, j)` is good;
@@ -84,7 +84,7 @@ Do not forget to follow the rules from `pep8` and test your implementations with
 
 * `def makeShell(n):`
 
-  `n` is positive integer. You should return list `a` of length `2 n + 1`. Its `i`-th element is list of some zeros. 
+  `n` is positive integer. You should return list `a` of length `2 * n - 1`. Its `i`-th element is list of some zeros. 
 
   * `a[0]` should contain `1` zero;
   * `a[1]` should contain `2` zeros;
