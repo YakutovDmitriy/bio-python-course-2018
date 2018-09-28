@@ -6,18 +6,21 @@ Do not forget to follow the rules from `pep8` and test your implementations with
 
 Your implementations should use `yield` and should not use a lot of memory.You can test your implementations using list construction from your iterable.
 
-You can import any function from modules `itertools` and `functools`.
+You can import any function from modules `itertools`, `functools` and `operator`.
+
+`itertools.count(b)` is iterable with infinite sequence of numbers from `b`.
 
 
 * `def squares(a):`
 
-  `a` is sequence of integers. Return iterable with its sequares.
+  `a` is sequence of integers. Return iterable with its squares.
 
   For example:
     ```python
     squares([]) -> Nothing
     squares([1, 3, 5]) -> 1, 9, 25
     squares(range(10)) -> 0, 1, 4, 9, ..., 64, 81
+    squares(itertools.count(5)) -> 25, 36, 49, ..., 10000, ...
     ```
 
 * `def repeatntimes(elems, n):`
@@ -29,6 +32,8 @@ You can import any function from modules `itertools` and `functools`.
     repeatntimes([1], 5) -> 1, 1, 1, 1, 1
     repeatntimes([1, 2, 3], 3) -> 1, 2, 3, 1, 2, 3, 1, 2, 3
     repeatntimes([1, 2], 0) -> Nothing
+    repeatntimes(itertools.count(1), 1) -> 1, 2, 3, 4, 5, ...,
+    repeatntimes(itertools.count(1), 7) -> 1, 2, 3, 4, 5, ...,
     ```
 
 * `def evens(x):`
@@ -75,7 +80,7 @@ For example:
 
 * `def extractnumbers(s):`
   
-  `s` is string. Yield digits from string `s`. Their order should coincide with order in `s`.
+  `s` is sequence of characters (strings of length `1`). Yield characters from `s` which are digits. Their order should coincide with order in `s`.
 
   For example:
     ```python
@@ -83,6 +88,7 @@ For example:
     extractnumbers('a1b2c3d4e5') -> '1', '2', '3', '4', '5'
     extractnumbers('abcde') -> Nothing
     extractnumbers('1213') -> '1', '2', '1', '3'
+    extractnumbers(('1', '2', '3')) -> '1', '2', '3'
     ```
 
 * `def changecase(s):`
@@ -96,7 +102,7 @@ For example:
 
 * `def productif(elems, conds):`
 
-  `elems` is sequence of `int`, `conds` is sequence of `bool`. Return product of elements from `elems` such that corresponding element of `conds` is `True`. It is guaranteed that length of `conds` is greater than or equal to length of `elems`.
+  `elems` is sequence of `int`, `conds` is sequence of `bool`. Return product of elements from `elems` such that corresponding element of `conds` is `True`. Length of `conds` may be less than length of `elems`. You can assume that corresponding element for such element of `elems` is `False`. It is guaranteed that sequence at least one of these two sequences is finite.
 
   For example:
     ```python
@@ -104,4 +110,5 @@ For example:
     productif(range(5), [False, False, True, False, True]) = 8
     productif([], [True, True, True, True]) = 1
     productif([100], [False]) = 1
+    productif(itertools.count(1), [True, True, True, False, True]) = 30
     ```
