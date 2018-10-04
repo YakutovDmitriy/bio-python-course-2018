@@ -6,6 +6,8 @@ Your implementations should use recursion.
 You can not import any modules (`math`, `itertools`, etc).
 
 
+These functions have different difficulty. You can implement only some of them and pass the task.
+
 * `def factorial(n):`
 
   Calculate factorial of `n`. `n >= 0`
@@ -93,6 +95,32 @@ You can not import any modules (`math`, `itertools`, etc).
     ackermann(3, 3) = 61
     ```
 
+* `def drawborders(n):`
+
+  You task is to create some borders in picture `n x n`.
+
+  For example:
+    ```python
+    drawborders(1) = ['+']
+
+    drawborders(2) = ['++',
+                      '++']
+
+    drawborders(3) = ['+-+',
+                      '|+|',
+                      '+-+']
+
+    drawborders(4) = ['+--+',
+                      '|++|',
+                      '|++|',
+                      '+--+']
+
+    drawborders(5) = ['+---+'
+                      '|+-+|',
+                      '||+||',
+                      '|+-+|',
+                      '+---+']
+    ```
 
 * `def genbinarystrings(n):`
 
