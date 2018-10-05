@@ -132,7 +132,7 @@ These functions have different difficulty. You can implement only some of them a
     genbinarystrings(0) = ['']
     genbinarystrings(1) = ['0', '1']
     genbinarystrings(2) = ['00', '01', '10', '01']
-    genbinarystrings(3) = ['000', '001', '010', '001', '100', '101', '110', '101']
+    genbinarystrings(3) = ['000', '001', '010', '011', '100', '101', '110', '101']
     ```
 
 * `def istwopower(n):`
