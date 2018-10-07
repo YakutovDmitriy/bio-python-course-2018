@@ -196,10 +196,10 @@ These functions have different difficulty. You can implement only some of them a
 
   For example:
     ```python
-    parentheses(1, 5) = 5
-    parentheses(4, 6) = 2
-    parentheses(18, 12) = 6
-    parentheses(283918822, 595730520) = 22
+    gcd(1, 5) = 1
+    gcd(4, 6) = 2
+    gcd(18, 12) = 6
+    gcd(283918822, 595730520) = 22
     ```
 
 * `def mergesort(a):`
