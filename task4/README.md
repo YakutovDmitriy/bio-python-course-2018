@@ -37,7 +37,7 @@ These functions have different difficulty. You can implement only some of them a
 
 * `def recurrent(n):`
 
-  Calculate `n`-th number of the following reccurent:
+  Calculate `n`-th number of the following recurrent:
 
   * `f(0) = 0`
   * `f(1) = 1`
@@ -46,8 +46,8 @@ These functions have different difficulty. You can implement only some of them a
 
   For example:
     ```python
-    reccurent(2) = 1
-    reccurent(3) = 2
+    recurrent(2) = 1
+    recurrent(3) = 2
     recurrent(5) = 3
     recurrent(7) = 3
     ```
