@@ -42,7 +42,7 @@ Other arguments can be `int` and `float`.
 
   For example:
     ```python
-    getdiagonal(np.array([[1, 2], [3, 4]])) = np.array([1, 3])
+    getdiagonal(np.array([[1, 2], [3, 4]])) = np.array([1, 4])
     ```
 
 
