@@ -104,11 +104,12 @@ Other arguments can be `int` and `float`.
 
 * `def matrixproduct(a, b):`
 
-  `a` and `b` are `2`-dimensional arrays of the same shape. Return the [product](https://en.wikipedia.org/wiki/Matrix_multiplication) of matrices represented by these arrays.
+  `a` and `b` are `2`-dimensional arrays of shapes `(n, m)` and `(m, k)` for some positive integers `n`, `m` and `k`. Return the [product](https://en.wikipedia.org/wiki/Matrix_multiplication) of matrices represented by these arrays.
 
   For example:
     ```python
     matrixproduct(np.array([[1, 2], [3, 4]]), np.array([[5, 6], [7, 8]])) = np.array([[19, 22], [43, 50]])
+    matrixproduct(np.array([[1, 2]]), np.array([[3], [4]])) = np.array([[11]])
     ```
 
 
