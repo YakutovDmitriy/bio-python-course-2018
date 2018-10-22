@@ -68,7 +68,7 @@ Other arguments can be `int` and `float`.
 
   For example:
     ```python
-    getmoments(np.array([2, 1, 9])) = (12.666666666666666, 3.5590260840104371)
+    getmoments(np.array([2, 1, 9])) = (4.0, 12.66666666666666)
     ```
 
 
