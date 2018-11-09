@@ -1,4 +1,4 @@
-# Task 6
+# Task 7
 
 ## Implement functions in file `task7/task7.py`
 
