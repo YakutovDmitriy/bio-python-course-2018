@@ -1,4 +1,4 @@
-# Task 7
+# Task 8
 
 ## Implement class `LinkedQueue`. You can find the specification in [file `queuehw.py`](queuehw.py).
 
