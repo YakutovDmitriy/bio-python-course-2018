@@ -84,3 +84,13 @@ ddir     DIRECTORY
 ~/work/cdir/$ exit
 Bye bye!
 ```
+
+You are free to add functionality to current description. This will give you some extra points.
+
+For example:
+
+* More commands from bash (`grep`, `mv`, `cp`, `clear`, etc)
+
+* Print output to file (`ls > list.txt`)
+
+* Add arguments to some commands (e.g. `head -n 3 f.txt` prints at most 3 first lines of file). You can read documentation to module `argparse` to implement this.
